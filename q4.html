@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <!--     <img
+      src="https://img.freepik.com/vetores-gratis/doutor-ilustracao-clinica_1270-69.jpg"
+      alt="Medico segurando quadro"
+      class="normal"
+    /> -->
+  
+      <nav>
+        <h1>Consultório Odontológico</h1>
+      </nav>
+      <section>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="inputText" type="text" data-length="10">
+              
+            </div>
+          </div>
+
+       <!--  <p>
+          Paciente:<input type="text" id="inputText" /> -->
+
+          <input
+            type="button"
+            value="Adicionar"
+            id="btnAdd"
+            class="waves-effect waves-light btn"
+          />
+          <input
+            type="button"
+            value="Urgência"
+            id="btnUrgency"
+            class="waves-effect waves-light btn"
+          />
+          <input
+            type="button"
+            value="Atender"
+            id="btnMeet"
+            class="waves-effect waves-light btn"
+          />
+        </p>
+        <h3>
+          Atendimento:
+          <span id="outAtendimento" class="fonteAzul"></span>
+        </h3>
+        <pre id="outLista"></pre>
+      </section>
+   
+    <script defer src="./q4.js"></script>
+  </body>
+</html>

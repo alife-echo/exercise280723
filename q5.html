@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: fontCustom1;
+        font-weight: bold;
+       
+      }
+      @font-face {
+      font-family: fontCustom1;
+      src: url(..//../../../SITE_PORTIFOLIO/Pragmatica-ExtraLight.ttf);
+      }
+      .row{
+        margin-left: 1rem;
+      }
+      .margin{
+        margin-left: 10px;
+      }
+      section{
+       width: 100%;
+       position: absolute;
+        top: 35%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+      }
+      input[type="button"]{
+        color: white;
+        font-weight: bold;
+        font-family: fontCustom1;
+       cursor: pointer;
+       transition: 0.3s;
+   
+      }
+      input[type="button"]:hover{color: #e9e5e5;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="#00695c teal darken-3"><h2>Revenda Herbie</h2></nav>
+    </header>
+    <section>
+      <div class="row">
+        <form class="col s7">
+          <div class="row" >
+            <div class="input-field col s6">
+              <input type="text" id = 'in_Model' placeholder="Modelo:">
+            </div>
+          </div>
+          <div class="row">
+            <form class="col s7">
+              <div class="row" >
+                <div class="input-field col s6">
+                  <input type="text" id = 'in_Price' placeholder="Preço:">
+                  
+                </div>
+                <input type="button" id="btnAdd" class="waves-effect waves-light btn-large margin grey darken-3" value="Adicionar">
+              </div>
+
+              <div class="buttons">
+                 <input type="button" id="btn_List_ALL" class="waves-effect waves-light btn-large  grey darken-3" value="Listar Todos">
+                 <input type="button" id="btn_Filter_Price" class="waves-effect waves-light btn-large  grey darken-3" value="Filtrar por preço">
+                 
+                </div>
+              
+    </section>
+    <h7 id="outList"></h7>
+    <script src="./q5.js"></script>
+    
+  </body>
+</html>
